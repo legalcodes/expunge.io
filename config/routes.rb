@@ -9,7 +9,45 @@ Expungio::Application.routes.draw do
 
 
 #this maps urls to static pages
-
+  get '/1', to: 'questions#1'
+  get '/2', to: 'questions#2'
+  get '/3', to: 'questions#3'
+  get '/4', to: 'questions#4'
+  get '/5', to: 'questions#5'
+  get '/6', to: 'questions#6'
+  get '/7', to: 'questions#7'
+  get '/8', to: 'questions#8'
+  get '/9', to: 'questions#9'
+  get '/10', to: 'questions#10'
+  get '/11', to: 'questions#11'
+  get '/12', to: 'questions#12'
+  get '/13', to: 'questions#13'
+  get '/14', to: 'questions#14'
+  get '/15', to: 'questions#15'
+  get '/16', to: 'questions#16'
+  get '/17', to: 'questions#17'
+  get '/18', to: 'questions#18'
+  get '/19', to: 'questions#19'
+  get '/20', to: 'questions#20'
+  get '/21', to: 'questions#21'
+  get '/22', to: 'questions#22'
+  get '/23', to: 'questions#23'
+  get '/24', to: 'questions#24'
+  get '/25', to: 'questions#25'
+  get '/26', to: 'questions#26'
+  get '/27', to: 'questions#27'
+  get '/28', to: 'questions#28'
+  get '/29', to: 'questions#29'
+  get '/30', to: 'questions#30'
+  get '/31', to: 'questions#31'
+  get '/32', to: 'questions#32'
+  get '/33', to: 'questions#33'
+  get '/34', to: 'questions#34'
+  
+  
+  
+  
+  
 
   get '/disclaimer', to: 'questions#disclaimer'
   get '/notsure', to: 'questions#notsure'
@@ -48,7 +86,6 @@ Expungio::Application.routes.draw do
   get '/qopen3', to: 'questions#qopen3'
   get '/opencase', to: 'questions#opencase'
 
-  get '/agearrested', to: 'questions#agearrested'
   get '/juvrecord', to: 'questions#juvrecord'
   get '/yeararrested', to: 'questions#yeararrested'
   get '/adultorjuv', to: 'questions#adultorjuv'
