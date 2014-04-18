@@ -1,8 +1,12 @@
 <div class="center">
 
-<h2>If you did not receive a pardon, then you cannot expunge your record.</h3></h2><br>
+<h2>Was the pardoned crime the only crime on your record?</h3></h2><br>
 
+<%= link_to("Yes", b44_path, :method => "get", :class => "btn btn-large") %> <br><br>
 
+<%= link_to("No", b42_path, :method => "get", :class => "btn btn-large")%> <br><br>
+
+<%= link_to("I don't know", dontknow_path, :method => "get", :class => "btn btn-large") %>
 
 </div>
 

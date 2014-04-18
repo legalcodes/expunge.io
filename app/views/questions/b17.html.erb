@@ -1,10 +1,24 @@
 <div class="center">
 
-<h2>Were you found guilty?</h2><br>
+<h2>Were you found not criminally responsible for one of the following?</h2><br>
 
-<%= link_to("Yes", b23_path, :method => "get", :class => "btn btn-large") %> <br><br>
+<ul>
+	<li>Urination</li>
+	<li>Panhandling</li>
+	<li>Public Drunkenness</li>
+	<li>Obstruction</li>
+	<li>Public Sleeping</li>
+	<li>Loitering</li>
+	<li>Vagrancy</li>
+	<li>Riding public transit without paying the fare</li>
+	<li>Trespass</li>
+	<li>Disturbing the peace</li>
+	<li>Telephone misuse</li>
+</ul><br>
 
-<%= link_to("No", b22_path, :method => "get", :class => "btn btn-large")%> <br><br>
+<%= link_to("Yes", b35_path, :method => "get", :class => "btn btn-large") %> <br><br>
+
+<%= link_to("No", b18_path, :method => "get", :class => "btn btn-large")%> <br><br>
 
 <%= link_to("I don't know", dontknow_path, :method => "get", :class => "btn btn-large") %>
 
