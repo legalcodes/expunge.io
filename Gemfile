@@ -39,7 +39,11 @@ gem "sass", :require => 'sass'
 group :production do
   gem 'rails_12factor'
   gem 'heroku_rails_deflate'
+  
 end
+
+
+gem 'jquery-rails', '>= 1.0.12'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

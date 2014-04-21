@@ -8,7 +8,22 @@
   <!--favicon-->
   <%= favicon_link_tag 'favicon.png' %>
 
-  <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+  <script type="text/javascript">
+      window.onload = function()
+      {
+          if(!window.jQuery)
+          {
+              alert('jQuery not loaded');
+          }
+          else
+          {
+              $(document).ready(function(){
+                  $('#example').tooltip({'placement':'top', 'trigger' : 'hover'});
+				  $('#example2').tooltip({'placement':'top', 'trigger' : 'hover'});
+              });
+          }
+      }
+  </script>
 
   <!--[if lte IE 7]>
 <style type="text/css">
@@ -19,8 +34,10 @@
   }
 </style>
 <![endif]-->
+	  
 </head>
 <body>
+	
   <div class="wrapper">
     <header role="banner">
       <nav class="navbar navbar-fixed-top bs-docs-nav topbar" role="navigation">
