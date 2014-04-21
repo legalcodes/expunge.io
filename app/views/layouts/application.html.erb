@@ -7,25 +7,9 @@
   <%= csrf_meta_tags %>
   <!--favicon-->
   <%= favicon_link_tag 'favicon.png' %>
+  
 
-  <script type="text/javascript">
-      window.onload = function()
-      {
-          if(!window.jQuery)
-          {
-              alert('jQuery not loaded');
-          }
-          else
-          {
-              $(document).ready(function(){
-                  $('#example').tooltip({'placement':'top', 'trigger' : 'hover'});
-				  $('#example2').tooltip({'placement':'top', 'trigger' : 'hover'});
-              });
-          }
-      }
-  </script>
-
-  <!--[if lte IE 7]>
+<!-- [if lte IE 7]>
 <style type="text/css">
   .nav li {
       display: inline;
@@ -34,6 +18,9 @@
   }
 </style>
 <![endif]-->
+	
+ <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>	
+  
 	  
 </head>
 <body>
@@ -43,13 +30,13 @@
       <nav class="navbar navbar-fixed-top bs-docs-nav topbar" role="navigation">
         <div class="container topbar">
           <!-- Collect the nav links, forms, and other content for toggling -->
-          <a class="brand" href="/">Expunge.md</a> 
+          <a class="brand" href="/"></a> 
           <ul class="nav navbar-nav pull-right">
             <li><%= link_to "Home", :action => "index" %></li>
             <li><%= link_to "About", :action => "about" %></li>
 			<li><%= link_to "Forms", :action => "forms" %></li>
             <li><%= link_to "FAQs", :action => "FAQ" %></li>
-            <li><%= link_to "Maryland Volunteer Lawyers Association", "http://www.mvlslaw.org/", :target => "_blank" %></li>
+          <!-- <li><%= link_to "Maryland Volunteer Lawyers Association", "http://www.mvlslaw.org/", :target => "_blank" %></li> -->
 				
 			
 				
@@ -103,5 +90,19 @@
     ga('create', 'UA-37739534-19', 'expunge.io', {'name': 'scc'});
     ga('scc.send', 'pageview');
   </script>
+  
+  <!-- tooltip scripts -->
+  <script src="assets/js/bootstrap-tooltip.js"></script>
+  <script src="assets/js/bootstrap-popover.js"></script>
+	 
+	<script type="text/javascript">
+	      $(function() {
+	      $("a.pop").popover({ animation: true, placement: 'left', trigger: 'hover' })
+  	      $("span.ttleft").tooltip({ animation: true, placement: 'left', trigger: 'hover'})	
+   	      $("span.ttright").tooltip({ animation: true, placement: 'right', trigger: 'hover'})	
+   	      $("span.tttop").tooltip({ animation: true, placement: 'top', trigger: 'hover'})	
+   	      $("span.ttbottom").tooltip({ animation: true, placement: 'bottom', trigger: 'hover'})	});
+	    </script> 
+  
 </body>
 </html>

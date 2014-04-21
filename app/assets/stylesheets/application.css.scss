@@ -63,6 +63,8 @@ a {
 #medium-text{
   font-size:1.4em;
   line-height:1.2em;
+  max-width: 750px;
+  margin: 0px auto;
 }
 
 .btn {
@@ -138,32 +140,28 @@ footer,
 
   .brand {
     padding: 0;
-    width: 137px;
+    width: 337px;
     height: 41px;
     margin: 0 20px 0 0;
     text-indent: -999999px;
-    background: image-url('logo2.png') 0 0 no-repeat;
+    background: image-url('logo3.png') 0 0 no-repeat;
     border: none;
   }
 }
 
 /* Content */
-.page-header {
-  border: none;
-  color: #166B92;
-}
-
-.blue {
-    border: none;
-    color: #166B92;
-}
-
-.basicbody {
-	max-width: 750px;
-	margin: 0 auto;
+ .page-header {
+ 	 border: none;
+ 	 color: #166B92;
+	 font-size: 19px;
+	 max-width: 750px;
+ 	 line-height: 1.3em;
+ 	 position: relative;
+ 	 margin: 50px auto;
 	
+	
+  
 }
-
 
 
 /* Footer */
@@ -188,6 +186,8 @@ footer {
   }
 }
 
+/* Random Extra Stuff I've added */
+
 .center {
 	text-align: center;
 	margin: 60px auto 0 auto;
@@ -208,10 +208,45 @@ footer {
 
 }
 
+.blue {
+    border: none;
+    color: #166B92;
+}
+
+.basicbody {
+	max-width: 750px;
+	margin: 0 auto;
+	
+}
+
 .faq {
 	max-width: 750px;
 	margin: 0 auto;
 }
 
+/* Tool Tips */
 
+span.ttleft {
+	color: #B45F04;
+	text-decoration: underline;
+}
+
+span.ttright  {
+	color: #B45F04;
+	text-decoration: underline;
+}
+
+span.tttop  {
+	color: #B45F04;
+	text-decoration: underline;
+}
+
+span.ttbottom  {
+	color: #B45F04;
+	text-decoration: underline;
+}
+
+.tooltip-inner {
+    font-size: 13px;
+}
 
