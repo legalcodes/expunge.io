@@ -150,18 +150,26 @@ footer,
 }
 
 /* Content */
+
+
  .page-header {
  	 border: none;
  	 color: #166B92;
 	 font-size: 19px;
 	 max-width: 750px;
  	 line-height: 1.3em;
- 	 position: relative;
- 	 margin: 50px auto;
-	
-	
-  
-}
+
+ 	 margin: 50px auto; 
+	 
+     @media screen and (max-width: 480px) {
+
+       h1, h2, h3 {
+         line-height: 1.2em;
+   	  font-size: 34px;
+       }
+	 
+	 
+} }
 
 
 /* Footer */
