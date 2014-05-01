@@ -2,7 +2,7 @@ Expungio::Application.routes.draw do
   resources :questions
   root :to => 'questions#index'
   
-
+  
   get '/about', to: 'questions#about'
   get '/FAQ', to: 'questions#FAQ'
   get '/legalaid', to: 'questions#legalaid'
@@ -10,6 +10,7 @@ Expungio::Application.routes.draw do
 
 
 #this maps urls to static pages
+  get '/b0', to: 'questions#b0'
   get '/b1', to: 'questions#b1'
   get '/b2', to: 'questions#b2'
   get '/b3', to: 'questions#b3'
@@ -64,6 +65,10 @@ Expungio::Application.routes.draw do
   get '/b52', to: 'questions#b52'
   
   get '/dontknow', to: 'questions#dontknow'
+  get '/cantuse', to: 'questions#cantuse'
+  get '/step2', to: 'questions#step2'
+  get '/step3', to: 'questions#step3'
+
   
   
   
