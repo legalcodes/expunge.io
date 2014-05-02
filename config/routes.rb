@@ -66,6 +66,8 @@ Expungio::Application.routes.draw do
   
   get '/dontknow', to: 'questions#dontknow'
   get '/cantuse', to: 'questions#cantuse'
+
+  get '/step1', to: 'questions#step1'
   get '/step2', to: 'questions#step2'
   get '/step3', to: 'questions#step3'
 
