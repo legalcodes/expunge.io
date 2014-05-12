@@ -25,7 +25,7 @@ body {
 }
 
 button {
-  background-color: #FFA24C;
+  background-color: #EAAB00;
   color: white;
   padding: 10px 20px;
   border: none;
@@ -41,16 +41,16 @@ button {
 }
 
 button:hover {
-  background: #DA893E;
+  background: #ffbc09;
 }
 
 
 a {
-  color: #1abc9c;
+  color: #EAAB00;
 
   &:hover {
-    color: #148F77;
-    border-bottom: 1px solid #148F77;
+    color: #ffbc09;
+    border-bottom: 1px solid #ffbc09;
     text-decoration: none;
   }
 }
@@ -113,7 +113,7 @@ footer,
 /* Header */
 .topbar{
   // the salmon color was D97A55. teal #48BDAD
-  background: #1abc9c;
+  background-image:url('Flag_of_Maryland.svg.png');
   -webkit-text-stroke: 0px;
 
   @media screen and (max-width: 979px) {
@@ -132,6 +132,10 @@ footer,
     text-shadow: none;
     color: white;
     border: none;
+	&:hover {
+		color: #eaab00;
+	}
+	
 
     @media screen and (max-width: 480px) {
       padding: 0 10px 10px;
@@ -141,10 +145,11 @@ footer,
   .brand {
     padding: 0;
     width: 337px;
-    height: 41px;
+    height: 48px;
     margin: 10px 20px 0 0;
     text-indent: -999999px;
     background: image-url('logo5.png') 0 0 no-repeat;
+	background-size: 300px;
     border: none;
   }
 }
@@ -154,7 +159,7 @@ footer,
 
  .page-header {
  	 border: none;
- 	 color: #166B92;
+ 	 color: #981E32;
 	 font-size: 19px;
 	 max-width: 750px;
  	 line-height: 1.3em;
