@@ -1,12 +1,85 @@
 <div class="center">
 
-<h2>If you did not receive a pardon, then you likely cannot expunge your record. To learn more about pardons, check out this <a href="<%= asset_path( 'Pardon Information.pdf' ) %>" target="_blank" >pardon information form.</a><br><br>If you had any uncertainty about answering the questions on this website, you should <%= link_to("get your criminal record", step2_path)%> to clarify any uncertainy, and <%= link_to("speak with an attorney.", forms_path)%></h2><br>
+<h2>If you did not receive a pardon, then you likely cannot expunge your record. To learn more about pardons, check out this <a href="<%= asset_path( 'Pardon Information.pdf' ) %>" target="_blank" >pardon information form.</a><br><br></h2>
 
-<br><br><%= link_to("Start Over", b0_path, :method => "get", :class => "btn btn-large") %>
+			<h3>
+				If your record is coming between you and employment, the following local non-profits and government agencies provide training, job-placement, and support services to ex-offenders. 
+			</h3><br><br>
+			<div class="table-responsive">
+			<table class='table' style="max-width: 600px;
+			    word-wrap: break-word; margin: 0 auto;">
+	
+				<tr>
+					<td><a href="http://www.alternativedirectionsinc.org/" target="blank_">Alternative Directions:</a></td>
+					<td>410-889-5072</td>
 
+				</tr>
+				<tr>
+					<td><a href="http://www.aawdc.org" target="blank_">Anne Arundel Workforce Development Corporation:</td>
+					<td> 410-987-3890</td>
+				</tr>
+				<tr>
+					<td><a href="http://www.baltimorecountymd.gov" target="blank_">Baltimore County Workforce Development System: </td>
+					<td> 410-887-4048</td>
+				</tr>
+				<tr>
+					<td><a href="http://www.caroline-center.org" target="blank_">Caroline Center:</td>
+					<td> 410-563-1303</td>
+				</tr>
+				<tr>
+					<td><a href="http://www.cfwd.org" target="blank_">Center for Fathers, Families, and Workforce Development:</td>
+					<td> 410-367-5691</td>
+				</tr>
+				<tr>
+					<td><a href="http://genesisjobs.org/" target="blank_">Genesis Jobs – Goodwill:</td>
+					<td>410-323-9400</td>
+					</tr>
+				<tr>
+					<td><a href="http://www.goodwillches.org/" target="blank_">Goodwill Industries of the Chesapeake: </td>
+					<td>410-837-1800</td>
+				</tr>
+				<tr>
+					<td><a href="http://www.ecsm.org/" target="blank_">Jericho – Episcopal Community Services of Maryland:  </td>
+					<td>410-522-3293</td>
+				</tr>
+				<tr>
+					<td><a href="http://www.livingclassrooms.org/" target="blank_">Living Classrooms:  </td>
+					<td>410-685-0295</td>
+				</tr>
+				<tr>
+					<td><a href="http://www.mce.md.gov/" target="blank_">Maryland Correctional Enterprises:  </td>
+					<td>410-540-5400</td>
+				</tr>
+				<tr>
+					<td><a href="http://www.mdnewdirections.org" target="blank_">Maryland New Directions:  </td>
+					<td>410-230-0630</td>
+				</tr>
+				<tr>
+					<td><a href="http://www.oedworks.com/" target="blank_">Mayor’s Office of Employment Development (Baltimore City):  </td>
+					<td>410-396-3009</td>
+				</tr>
+				<tr>
+					<td><a href="http://www.cc-md.org/our-daily-bread/" target="blank_">Our Daily Bread Employment Center:  </td>
+					<td>443-986-9010</td>
+				</tr>
+				
+					
+			
+			
+			</table>
+			</table>
+							
+			
+			<h3>
+				If you were uncertain about answering the questions on this website, you should <%= link_to("get your criminal record", step2_path)%> 					and <%= link_to("speak with an attorney.", forms_path)%><br>
+			</h3>
+		</p>
+	</div>		
 
+<div class="center">
+	<br><%= link_to("Start Over", b0_path, :method => "get", :class => "btn btn-large") %>
+	
 </div>
-
-
-
+	
+	
 
