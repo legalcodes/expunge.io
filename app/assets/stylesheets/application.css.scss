@@ -5,17 +5,11 @@
  */
 
 
-/* CSS Font Face */
-@font-face {
-  font-family: "estandar";
-  src: url("..type/estandar-webfont.eot");
-  src: local("☺"),
-    url("..type/estandar-webfont.woff") format("woff"),
-    url("..type/estandar-webfont.otf") format("opentype"),
-    url("..type/estandar-webfont.svg") format("svg");
-  }
 
-h1 { font-family: "estandar", Georgia, serif; }
+h1 { 
+	font-family: "Lato", Georgia, serif;
+	text-decoration: underline;
+ }
 
 
 /* General */
@@ -153,7 +147,7 @@ footer,
     text-shadow: none;
     color: white;
     border: none;
-	font-family: "estandar", Georgia, serif;
+	font-family: "lato", Georgia, serif;
 	font-size: 20px;
 	padding-top:17px;
 
