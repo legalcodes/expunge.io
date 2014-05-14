@@ -153,7 +153,11 @@ footer,
     text-shadow: none;
     color: white;
     border: none;
-	font-size: 18px;
+	font-family: "estandar", Georgia, serif;
+	font-size: 20px;
+	padding-top:17px;
+
+	
 	&:hover {
 		color: #eaab00;
 	}
