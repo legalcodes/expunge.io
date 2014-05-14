@@ -5,6 +5,19 @@
  */
 
 
+/* CSS Font Face */
+@font-face {
+  font-family: "estandar";
+  src: url("..type/estandar-webfont.eot");
+  src: local("☺"),
+    url("..type/estandar-webfont.woff") format("woff"),
+    url("..type/estandar-webfont.otf") format("opentype"),
+    url("..type/estandar-webfont.svg") format("svg");
+  }
+
+h1 { font-family: "estandar", Georgia, serif; }
+
+
 /* General */
 html, body {
   height: 100%;
@@ -157,8 +170,8 @@ footer,
     height: 48px;
     margin: 10px 20px 0 0;
     text-indent: -999999px;
-    background: image-url('logo7.png') 0 0 no-repeat;
-	background-size: 300px;
+    background: image-url('logo9.png') 0 0 no-repeat;
+	background-size: 350px;
     border: none;
   }
 }
@@ -180,6 +193,7 @@ footer,
        h1, h2, h3 {
          line-height: 1.2em;
    	  font-size: 24px;
+	  font-family: "chunkfive", Georgia, serif;
        }
 	 
 	 
@@ -250,15 +264,6 @@ footer {
 ol.spacylist {
 
 }
-
-
-
-
-
-
-
-
-
 
 
 /* Tool Tips */
