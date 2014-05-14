@@ -171,6 +171,11 @@ footer,
     background: image-url('logo6.png') 0 0 no-repeat;
 	background-size: 350px;
     border: none;
+    
+	@media screen and (max-width: 480px) {
+      background-size: 300px;;
+    }
+	
   }
 }
 
