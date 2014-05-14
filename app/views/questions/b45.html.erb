@@ -1,13 +1,22 @@
 <div class="center">
+	<div class="basicbody" style="text-align: left;">
 
 <!-- <h2>You can retrieve your case record from the court that heard your case. This will provide us with more information to resolve your expungement. Please speak with an attorney about retrieving your case record.<br><br> -->
 
 
-<h2>We need to know the outcome of your case. To use this website effectively, you should <%= link_to("get your criminal record", step2_path)%> or <%= link_to("speak with an attorney.", forms_path)%></h2>
+<h2>We need to know the outcome of your case. To use this website effectively, you should <%= link_to("get your criminal record", step2_path)%> or <%= link_to("speak with an attorney.", forms_path)%></h2><br>
+
 
 			<h3>
-				In the mean time, if your record is coming between you and employment, the following local non-profits and government agencies provide training, job-placement, and support services to ex-offenders. 
+				If you were uncertain about answering the questions on this website, you should <%= link_to("get your criminal record", step2_path)%> 					and <%= link_to("speak with an attorney.", forms_path)%><br><br>
+			</h3>
+
+			<h3>
+				If your record is coming between you and employment, the following local non-profits and government agencies provide training, job-placement, and support services to ex-offenders. 
 			</h3><br><br>
+</div>
+			
+			
 			<div class="table-responsive">
 			<table class='table' style="max-width: 600px;
 			    word-wrap: break-word; margin: 0 auto;">
@@ -73,9 +82,7 @@
 			</table>
 							
 			
-			<h3>
-				If you were uncertain about answering the questions on this website, you should <%= link_to("get your criminal record", step2_path)%> 					and <%= link_to("speak with an attorney.", forms_path)%><br>
-			</h3>
+			
 		</p>
 	</div>		
 
