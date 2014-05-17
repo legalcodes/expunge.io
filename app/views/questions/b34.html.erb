@@ -1,18 +1,14 @@
 <div class="center">
-
-<h2>You likely cannot expunge your case, but with the <%= link_to("help of an attorney", forms_path)%> you might be able to file for an exception.<!-- good cause --><br><br></h2>
-	
-	<h3>
-		If you were uncertain about answering the questions on this website, you should <%= link_to("get your criminal record", step2_path)%> 					and <%= link_to("speak with an attorney.", forms_path)%><br>
-	</h3>
-	
-	
-				<h3>
-					If your record is coming between you and employment, the following local non-profits and government agencies provide training, job-placement, and support services to ex-offenders. 
-				</h3><br><br>
-				<div class="table-responsive">
-				<table class='table' style="max-width: 600px;
-				    word-wrap: break-word; margin: 0 auto;">
+	<div class="well">
+		<h2>You likely cannot expunge your case, but with the <%= link_to("help of an attorney", forms_path)%> you might be able to file for an exception.<!-- good cause --><br><br>
+		</h2>
+		<h3>
+		If you were uncertain about answering the questions on this website, you should <%= link_to("get your criminal record", step2_path)%> 					and <%= link_to("speak with an attorney.", forms_path)%><br>If your record is coming between you and employment, the following local non-profits and government agencies provide training, job-placement, and support services to ex-offenders.
+		</h3><br><br>
+				<br><%= link_to("Start Over", b0_path, :method => "get", :class => "btn btn-large") %>
+	</div>
+	<div class="table-responsive">
+			<table class='table' style="max-width: 600px; word-wrap: break-word; margin: 0 auto;">
 	
 					<tr>
 						<td><a href="http://www.alternativedirectionsinc.org/" target="blank_">Alternative Directions:</a></td>
@@ -67,19 +63,12 @@
 						<td><a href="http://www.cc-md.org/our-daily-bread/" target="blank_">Our Daily Bread Employment Center:  </td>
 						<td>443-986-9010</td>
 					</tr>
-				
-					
-			
-			
 				</table>
 				</table>
-							
-			
-				
-			</p>
-		</div>		
+			</div>
+			</div>
 
-	<div class="center">
-		<br><%= link_to("Start Over", b0_path, :method => "get", :class => "btn btn-large") %>
+
+
 	
-	</div>
+

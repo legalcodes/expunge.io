@@ -1,15 +1,11 @@
 <div class="center">
-
-<h2>Were you on probation for three years? If you didn't receive probation, has it been 3 years since your court decision?</h2><br>
-
-<%= link_to("Yes", b36_path, :method => "get", :class => "btn btn-large") %> <br><br>
-
-<%= link_to("No", b38_path, :method => "get", :class => "btn btn-large")%> <br><br><br><br>
-
-<%= link_to("I don't know", dontknow_path, :method => "get", :class => "btn btn-large") %>
-
-<br><br><%= link_to("Start Over", b0_path, :method => "get", :class => "btn btn-large") %>
-
+	<div class="well">
+		<h2>Were you on probation for three years? If you didn't receive probation, has it been 3 years since your court decision?</h2><br>
+		<%= link_to("Yes", b36_path, :method => "get", :class => "btn btn-large") %> <br><br>
+		<%= link_to("No", b38_path, :method => "get", :class => "btn btn-large")%> <br><br><br><br>
+		<%= link_to("I don't know", dontknow_path, :method => "get", :class => "btn btn-large") %><br><br>
+		<%= link_to("Start Over", b0_path, :method => "get", :class => "btn btn-large") %>
+	</div>
 </div>
 
 
