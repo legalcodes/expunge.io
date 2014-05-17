@@ -1,4 +1,5 @@
 <div class="center">
+	<div class="well">
 	<h2>
 		You likely cannot expunge your case.
 	</h2>
@@ -15,7 +16,10 @@
 			
 			<h3>
 				<br> If your record is coming between you and employment, the following local non-profits and government agencies provide training, job-placement, and support services to ex-offenders. 
-			</h3><br><br>
+			</h3><br>
+	</div>
+			<%= link_to("Start Over", b0_path, :method => "get", :class => "btn btn-large") %><br><br>
+			
 			<div class="table-responsive">
 			<table class='table' style="max-width: 600px;
 			    word-wrap: break-word; margin: 0 auto;">
@@ -86,7 +90,7 @@
 	</div>		
 
 <div class="center">
-	<br><%= link_to("Start Over", b0_path, :method => "get", :class => "btn btn-large") %>
+	<br>
 	
 </div>
 	
