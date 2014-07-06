@@ -164,20 +164,24 @@ footer,
 
   .brand {
     padding: 0;
-    width: 337px;
+    width: 500px;
     height: 48px;
     margin: 10px 20px 0 0;
     text-indent: -999999px;
     background: image-url('logo6.png') 0 0 no-repeat;
-	background-size: 350px;
+	background-size: 400px;
     border: none;
     
 	@media screen and (max-width: 480px) {
-      background-size: 300px;;
+      background-size: 400px;;
     }
 	
   }
+   
 }
+
+
+
 
 /* Content */
 
@@ -238,6 +242,12 @@ footer {
 	margin: 60px auto;
 	width: 999px;	
 }
+
+.justify2 {
+	text-align: left;
+	width: 999px;
+}
+
 
 .questions {
 	text-align: center;
