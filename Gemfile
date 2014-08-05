@@ -45,6 +45,10 @@ end
 
 gem 'jquery-rails', '>= 1.0.12'
 
+
+
+
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 

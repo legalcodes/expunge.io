@@ -23,7 +23,7 @@
 
 	  
 </head>
-<body>
+<body data-no-turbolink>
 	
   <div class="wrapper">
     <header role="banner">
@@ -32,12 +32,26 @@
           <!-- Collect the nav links, forms, and other content for toggling -->
 
           <a class="brand" href="/"></a>
+		 
+		<div class="btn-group pull-right" style="padding: 13px 0"> 
+		<button type="button" class="btn dropdown-toggle" data-toggle="dropdown"><i class="icon-align-left"></i>
+          
+		</button> 
+        <ul class="dropdown-menu">	 
+          <li><%= link_to "About Us", :action => "about" %></li>
+          <li><%= link_to "Resources", :action => "forms" %></li>
+	   <li><%= link_to "FAQs", :action => "FAQ" %></li>
+          <li class="divider"></li>
+          <li><%= link_to "Home", :action => "index" %></li>
+        </ul>
+	</div>
+		  
 
-          <ul class="nav navbar-nav pull-right">
+<!--           <ul class="nav navbar-nav pull-right">
             <li style="text-decoration:underline"><%= link_to "Home", :action => "index" %></li>
             <li style="text-decoration:underline"><%= link_to "About Us", :action => "about" %></li>
 			<li style="text-decoration:underline"><%= link_to "Resources", :action => "forms" %></li>
-            <li style="text-decoration:underline"><%= link_to "FAQs", :action => "FAQ" %></li>
+            <li style="text-decoration:underline"><%= link_to "FAQs", :action => "FAQ" %></li>    -->
           <!-- <li><%= link_to "Maryland Volunteer Lawyers Association", "http://www.mvlslaw.org/", :target => "_blank" %></li> -->
 				
 			
@@ -133,13 +147,15 @@
   <script src="assets/js/bootstrap-popover.js"></script>
 	 
 	<script type="text/javascript">
-	      $(function() {
+		  $(document.body).on
+		  $(function() {
 	      $("a.pop").popover({ animation: true, placement: 'left', trigger: 'hover' })
   	      $("span.ttleft").tooltip({ animation: true, placement: 'left', trigger: 'hover'})	
    	      $("span.ttright").tooltip({ animation: true, placement: 'right', trigger: 'hover'})	
    	      $("span.tttop").tooltip({ animation: true, placement: 'top', trigger: 'hover'})	
    	      $("span.ttbottom").tooltip({ animation: true, placement: 'bottom', trigger: 'hover'})	});
-	    </script> 
+	    
+		</script> 
   
 </body>
 </html>
