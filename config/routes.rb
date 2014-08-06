@@ -70,7 +70,12 @@ Expungio::Application.routes.draw do
   get '/step1', to: 'questions#step1'
   get '/step2', to: 'questions#step2'
   get '/step3', to: 'questions#step3'
-
+  
+  get '/p1', to: 'questions#p1'
+  get '/p2', to: 'questions#p2'
+  get '/p3', to: 'questions#p3'
+  get '/p4', to: 'questions#p4'
+  get '/p5', to: 'questions#p5'
   
   
   
