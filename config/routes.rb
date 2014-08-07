@@ -63,6 +63,14 @@ Expungio::Application.routes.draw do
   get '/b50', to: 'questions#b50'
   get '/b51', to: 'questions#b51'
   get '/b52', to: 'questions#b52'
+  get '/b53', to: 'questions#b53'
+  get '/b54', to: 'questions#b54'
+  get '/b55', to: 'questions#b55'
+  get '/b56', to: 'questions#b56'
+  get '/b57', to: 'questions#b57'
+  get '/b58', to: 'questions#b58'
+  get '/b59', to: 'questions#b59'
+  get '/b60', to: 'questions#b60'
   
   get '/dontknow', to: 'questions#dontknow'
   get '/cantuse', to: 'questions#cantuse'
@@ -77,8 +85,13 @@ Expungio::Application.routes.draw do
   get '/p4', to: 'questions#p4'
   get '/p5', to: 'questions#p5'
   
-  
-  
+  get '/m6', to: 'questions#m6'
+  get '/m48', to: 'questions#m48'
+  get '/m23', to: 'questions#m23'
+  get '/m30', to: 'questions#m30'
+  get '/m37', to: 'questions#m37' 
+  get '/m44', to: 'questions#m44' 
+  get '/m49', to: 'questions#m49' 
   
   
 
