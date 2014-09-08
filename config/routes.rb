@@ -84,6 +84,7 @@ Expungio::Application.routes.draw do
   get '/p3', to: 'questions#p3'
   get '/p4', to: 'questions#p4'
   get '/p5', to: 'questions#p5'
+  get '/p6', to: 'questions#p6'
   
   get '/m6', to: 'questions#m6'
   get '/m48', to: 'questions#m48'
