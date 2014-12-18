@@ -5,6 +5,21 @@
  */
 
 
+.homebackground {
+    margin: 30px auto 0;
+    background-image: url('shutter1.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+     box-shadow: inset 0 0 0 1000px rgba(0,0,0,.35); 
+@media screen and (max-width: 700px) {
+    background-image: url('homebackground.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 1500px;
+  }
+}
+
 
 h1 { 
 	font-family: "Lato", Georgia, serif;
@@ -21,7 +36,7 @@ html, body {
 body {
   background: #fff;
   background-size:500px 500px;
-  font-family: 'Lato', sans-serif;
+  /*font-family: 'Lato', sans-serif; */
   -webkit-text-stroke: 0.1px;
 
   @media screen and (max-width: 480px) {
@@ -74,8 +89,11 @@ a {
   line-height:1.2em;
   max-width: 750px;
   margin: 0px auto;
-
 }
+
+
+
+
 
 .btn {
   font-size:1.5em;
@@ -111,17 +129,17 @@ hr {
 }
 
 /* Sticky footer */
-.wrapper {
+/*.wrapper {
   min-height: 100%;
   height: auto !important;
   height: 100%;
-  margin: 0 auto -61px; /* the bottom margin is the negative value of the footer's height */
-}
+   margin: 0 auto 110px;} */  /* the bottom margin is the negative value of the footer's height */
 
+/*
 footer,
 .push {
-  height: 61px; /* .push must be the same height as .footer */
-}
+  height: 110px; }*/  /* .push must be the same height as .footer */
+
 
 /* Header */
 .topbar{
@@ -130,6 +148,7 @@ footer,
   background-color: #EAAB00 ;
   background-size: 900px;
   -webkit-text-stroke: 0px;
+  /* box-shadow: inset 0 0 0 1000px rgba(234,171,0,1);*/
 
   @media screen and (max-width: 979px) {
     padding: 0 20px;
@@ -180,9 +199,6 @@ footer,
    
 }
 
-
-
-
 /* Content */
 
 
@@ -207,10 +223,21 @@ footer,
 } }
 
 
-/* Footer */
+/* Footer */  
+
 footer {
+  border-top: 1px solid #EAAB00;
+  height: 110px;
+  /* background-color: white; */
+    .row {
+     padding: 10px 0;
+    }
+}
+/*
+ 
+ footer {
   border-top: 1px solid #2f756b;
-  height: 60px;
+  height: 110px;
 
   @media screen and (max-width: 979px) {
     &,
@@ -227,7 +254,7 @@ footer {
     vertical-align: top;
     &.twitter-share-button { margin-left: 15px; }
   }
-}
+}   */
 
 /* Random Extra Stuff I've added */
 

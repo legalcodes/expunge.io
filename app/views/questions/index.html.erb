@@ -1,55 +1,41 @@
-<div class="page-header">
-  <!-- <h1><b>Welcome to ExpungeMaryland.org</b></h1> -->
-	<img src="<%= image_url('expungelogo.png') %>" style="width: 450px;"%>
-</div> 
-
-<div id="medium-text">
-    <p style="color: #535353;">You had a run-in with the criminal system. You may have a criminal record and it may be preventing you from bettering your life.</p>
-    <p style="color: #535353;">However, you can do something about it.</p>
-	<p style="color: #535353;">
-		If you meet certain requirements, you can get your criminal record erased through a process called expungement. ExpungeMaryland.org is a free online tool which helps determine, through a few simple questions, if your record can be expunged.  The tool also suggests next steps which often include working with a lawyer.  </p>
-	<p style="color: #535353;">
-		The entire online review takes less than 5 minutes.  Let’s get started!
-	</p>
-</div>
-
-<br><br>
-
-<div class="row" id='action-steps'>
-	<div class="span4" style="text-align: center;">
-		<div class='well'>
-		<%= link_to('<button id="medium-text">What is Expungement?</button>'.html_safe, b52_path, :method => "get") %>
+<body class="homebackground">  
+		<div class="page-header">
+		  <!-- <h1><b>Welcome to ExpungeMaryland.org</b></h1> -->
+		</div> 
+		<br><br><br><br>
+		<div>
+				<center><h1 style="color: #fff; text-shadow: 3px 3px 6px #000;">It's time for a do-over!<br><br></h1></center>
+		    <p id="medium-text" style="color: #fff; text-shadow: 3px 3px 6px #000; line-height: 140%;">You had a run-in with the criminal system. You may have a criminal record and it may be preventing you from bettering your life.</p>
+		    <p id="medium-text" style="color: #fff; text-shadow: 3px 3px 6px #000; line-height: 140%;">However, you can do something about it.</p>
+				<p id="medium-text" style="color: #fff; text-shadow: 3px 3px 6px #000; line-height: 140%;">
+				If you meet certain requirements, you can get your criminal record erased through a process called expungement. ExpungeMaryland.org is a free online tool which helps determine, through a few simple questions, if your record can be expunged.  The tool also suggests next steps which often include working with a lawyer.  </p>
+				<p id="medium-text" style="color: #fff; text-shadow: 3px 3px 6px #000; line-height: 140%;">
+				The entire online review takes less than 5 minutes.  Let’s get started!
+				</p id="medium-text" style="color: #fff; text-shadow: 3px 3px 6px #000; line-height: 140%;">
+		</div>
+		<br><br><br><br><br><br><br>
+		<div class="row" id='action-steps'>
+			<div class="span4" style="text-align: center;">
+				
+				<%= link_to('<button id="medium-text">What is Expungement?</button>'.html_safe, b52_path, :method => "get") %>
+				
+			</div>
+			<div class="span4" style="text-align: center;">
+				
+					<%= link_to('<button id="medium-text">How can I expunge my record?</button>'.html_safe, step1_path, :method => "get") %>
+				
+			</div>
+			<div class="span4" style="text-align: center;">
+				
+					<%= link_to('<button id="medium-text">Can I expunge my record?</button>'.html_safe, disclaimer_path, :method => "get") %>
+				
+			</div>
 		</div>
 	</div>
-	<div class="span4" style="text-align: center;">
-		<div class='well'>
-			<%= link_to('<button id="medium-text">How can I expunge my record?</button>'.html_safe, step1_path, :method => "get") %>
-		</div>
-	</div>
-	<div class="span4" style="text-align: center;">
-		<div class='well'>
-			<%= link_to('<button id="medium-text">Can I expunge my record?</button>'.html_safe, disclaimer_path, :method => "get") %>
-		</div>
-	</div>
-</div>
-
-
-
-
-
-
-
+</body>
 
 
 
 <!-- <div id ="medium-text">
-
-	<%= link_to('<button id="big-text">I was arrested in Maryland. Can I erase my criminal record?</button>'.html_safe, disclaimer_path, :method => "get") %> 
-	
-
-	
-	
+	<%= link_to('<button id="big-text">I was arrested in Maryland. Can I erase my criminal record?</button>'.html_safe, disclaimer_path, :method => "get") %> 	
 </div>  -->
-
-
-

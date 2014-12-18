@@ -6,125 +6,59 @@
   <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
   <!--favicon-->
-  <%= favicon_link_tag 'favicon.png' %>
-  
-
-<!-- [if lte IE 7]>
-<style type="text/css">
-  .nav li {
-      display: inline;
-      zoom: 1;
-      margin: 0 10px;
-  }
-</style>
-<![endif]-->
-	
- <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>	
-
-	  
+  <%= favicon_link_tag 'favicon.png' %>   	
+  <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>	
 </head>
 <body data-no-turbolink>
-	
   <div class="wrapper">
     <header role="banner">
       <nav class="navbar navbar-fixed-top bs-docs-nav topbar" role="navigation">
         <div class="container topbar">
           <!-- Collect the nav links, forms, and other content for toggling -->
-
           <a class="brand" href="/"></a>
-		 
-		<div class="btn-group pull-right" style="padding: 13px 0">
- 
-		<button type="button" class="btn dropdown-toggle btn-inverse btn-large" data-toggle="dropdown">Menu <i class="icon-align-left"></i>
-
-		</button>		
-		</button>
-        <ul class="dropdown-menu">	 
-          <li><%= link_to "About Us", :action => "about" %></li>
-          <li><%= link_to "Resources", :action => "forms" %></li>
-	   <li><%= link_to "FAQs", :action => "FAQ" %></li>
-          <li class="divider"></li>
-          <li><%= link_to "Home", :action => "index" %></li>
-        </ul>
-	</div>
-		  
-
-<!--           <ul class="nav navbar-nav pull-right">
+		      <div class="btn-group pull-right" style="padding: 13px 0">
+		      <button type="button" class="btn dropdown-toggle btn-inverse btn-large" data-toggle="dropdown">   Menu <i class="icon-align-left"></i>
+		      </button>		
+          <ul class="dropdown-menu">	 
+            <li><%= link_to "About Us", :action => "about" %></li>
+            <li><%= link_to "Resources", :action => "forms" %></li>
+            <li><%= link_to "FAQs", :action => "FAQ" %></li>
+            <li class="divider"></li>
+            <li><%= link_to "Home", :action => "index" %></li>
+          </ul>
+	       </div>
+      </nav>
+    </header>
+      <!--           
+        <ul class="nav navbar-nav pull-right">
             <li style="text-decoration:underline"><%= link_to "Home", :action => "index" %></li>
             <li style="text-decoration:underline"><%= link_to "About Us", :action => "about" %></li>
 			<li style="text-decoration:underline"><%= link_to "Resources", :action => "forms" %></li>
             <li style="text-decoration:underline"><%= link_to "FAQs", :action => "FAQ" %></li>    -->
-          <!-- <li><%= link_to "Maryland Volunteer Lawyers Association", "http://www.mvlslaw.org/", :target => "_blank" %></li> -->
-				
-			
-				
-				
-			
-          </ul>
-        </div>
-      </nav>
-    </header>
-
+          <!-- <li><%= link_to "Maryland Volunteer Lawyers Association", "http://www.mvlslaw.org/", :target => "_blank" %></li>
+        </ul> --> 
     <div id="content" class="container">
       <%= yield %>
+      
     </div>
-
-    <div style="height:30px"></div>
-
-    <div class="push"></div>
+    <div style="height:30px">
+    </div>
+    <div class="push">
+    </div>
   </div>
-
-
 <footer>
 	<div class="row" style="margin: 0 6px;">
-	  <div class="span4">Contact: Expunge@ACY.org<br>DISCLAIMER: This site does not constitute a legal service. <br>Created by <a href="https://twitter.com/jtashea" target="_blank">Jason Tashea</a> and <a href="https://twitter.com/tppnsj" target="_blank">Jon Tippens</a> | Code on <a href="https://github.com/legalcodes/expunge.io#im-interested-in-adapting-expungeio-to-another-state-are-you-down">GitHub</a> Dreamt up by <a href="https://twitter.com/cthydng">Cathy Deng</a> and the <a href="https://twitter.com/MCJJustice">Mikva Juvenile Justice Council</a>  </div>
-	  <div class="span3" style="text-align: center">SPONSORED BY <br><a href="http://warnockfoundation.org/" target="_blank">The Warnock Foundation</a><br><a href="http://warnockfoundation.org/" target="_blank" style="border: none !important;"><img src="<%= asset_path( 'warnock.png' ) %>" width="50" border="0"/>
-	</a></div>
-	  <div class="span3" style="text-align: center">CREATED FOR<br><a href="http://www.acy.org" target="_blank" style="border: none !important;"><img src="<%= asset_path( 'acylogo.png' ) %>" width="200" border="0"></a></div>
-  	  <div class="span2"><a class="hover" href="https://twitter.com/MarylandACY" target="_blank"><img src="<%= asset_path( 'twitter2.png' ) %>"width="40"></a><a href="https://www.facebook.com/pages/Advocates-for-Children-and-Youth/87277663332?ref=hl" target="_blank"><img src="<%= asset_path( 'facebook.png' ) %>"width="40"></a><a href="https://www.youtube.com/user/ACYMaryland" target="_blank"><img src="<%= asset_path( 'youtube.png' ) %>"width="40"></a><a href="https://www.linkedin.com/company/advocates-for-children-and-youth" target="_blank"><img src="<%= asset_path( 'linkedin.png' ) %>"width="40"></a></div>
+	  <div class="span4" style="color: white;">
+      Contact: Expunge@ACY.org<br>DISCLAIMER: This site does not constitute a legal service. </div>
+	  <div class="span3" style="text-align: center; color: white;">
+      SPONSORED BY <br><a href="http://warnockfoundation.org/" target="_blank">The Warnock Foundation</a><br><a href="http://warnockfoundation.org/" target="_blank" style="border: none !important;"><img src="<%= asset_path( 'warnock.png' ) %>" width="50" border="0"/></a>
+    </div>
+	  <div class="span3" style="text-align: center"><br><a href="http://www.acy.org" target="_blank" style="border: none !important;"><img src="<%= asset_path( 'acylogo7.png') %>" width="200" border="0"></a>
+    </div>
+  	<div class="span2"><a class="hover" href="https://twitter.com/MarylandACY" target="_blank"><img src="<%= asset_path( 'twitter2.png' ) %>"width="40"></a><a href="https://www.facebook.com/pages/Advocates-for-Children-and-Youth/87277663332?ref=hl" target="_blank"><img src="<%= asset_path( 'facebook.png' ) %>"width="40"></a><a href="https://www.youtube.com/user/ACYMaryland" target="_blank"><img src="<%= asset_path( 'youtube.png' ) %>"width="40"></a><a href="https://www.linkedin.com/company/advocates-for-children-and-youth" target="_blank"><img src="<%= asset_path( 'linkedin.png' ) %>"width="40"></a>
+    </div>
 	</div>
 </footer>
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- <footer>	  	  
-   <div class="container">
-      <div class="column-fluid" style="font-size: .9em">
-		<div class="span" style="line-height:140%" >
-          	<span style="font-size: 18px; color: grey;">
-				DISCLAIMER: This site does not constitute a legal service.<br>
-			</span> 
-			Created by <a href="https://twitter.com/jtashea" target="_blank">Jason Tashea</a> and <a href="https://twitter.com/tppnsj" target="_blank">Jon Tippens</a> | Code on <a href="https://github.com/legalcodes/expunge.io#im-interested-in-adapting-expungeio-to-another-state-are-you-down">GitHub</a>
-			<br> Dreamt up by <a href="https://twitter.com/cthydng">Cathy Deng</a> and the <a href="https://twitter.com/MCJJustice">Mikva Juvenile Justice Council</a> 
-        </div>       
-	    <div class="span5.4" style="float:right">
- 		  <a href="http://www.acy.org" target="_blank" style="border: none !important;"><img style="margin-right: 23px;" src="<%= asset_path( 'acylogo.png' ) %>"width="200" border="0"></a>
-		
-          <a class="hover" href="https://twitter.com/MarylandACY" target="_blank"><img src="<%= asset_path( 'twitter2.png' ) %>"width="40"></a>
-
-          <a href="https://www.facebook.com/pages/Advocates-for-Children-and-Youth/87277663332?ref=hl" target="_blank"><img src="<%= asset_path( 'facebook.png' ) %>"width="40"></a>
-		  
-          <a href="https://www.youtube.com/user/ACYMaryland" target="_blank"><img src="<%= asset_path( 'youtube.png' ) %>"width="40"></a>
-
-          <a href="https://www.linkedin.com/company/advocates-for-children-and-youth" target="_blank"><img src="<%= asset_path( 'linkedin.png' ) %>"width="40"></a>
-        </div>
-		
-      </div>    
-    </div>
-	  <br><br>
-</footer>   -->
-   
-   
-   
     
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
@@ -158,6 +92,32 @@
    	      $("span.ttbottom").tooltip({ animation: true, placement: 'bottom', trigger: 'hover'})	});
 	    
 		</script> 
-  
 </body>
 </html>
+
+<!-- <footer>       
+   <div class="container">
+      <div class="column-fluid" style="font-size: .9em">
+    <div class="span" style="line-height:140%" >
+            <span style="font-size: 18px; color: grey;">
+        DISCLAIMER: This site does not constitute a legal service.<br>
+      </span> 
+      Created by <a href="https://twitter.com/jtashea" target="_blank">Jason Tashea</a> and <a href="https://twitter.com/tppnsj" target="_blank">Jon Tippens</a> | Code on <a href="https://github.com/legalcodes/expunge.io#im-interested-in-adapting-expungeio-to-another-state-are-you-down">GitHub</a>
+      <br> Dreamt up by <a href="https://twitter.com/cthydng">Cathy Deng</a> and the <a href="https://twitter.com/MCJJustice">Mikva Juvenile Justice Council</a> 
+        </div>       
+      <div class="span5.4" style="float:right">
+      <a href="http://www.acy.org" target="_blank" style="border: none !important;"><img style="margin-right: 23px;" src="<%= asset_path( 'acylogo.png' ) %>"width="200" border="0"></a>
+    
+          <a class="hover" href="https://twitter.com/MarylandACY" target="_blank"><img src="<%= asset_path( 'twitter2.png' ) %>"width="40"></a>
+
+          <a href="https://www.facebook.com/pages/Advocates-for-Children-and-Youth/87277663332?ref=hl" target="_blank"><img src="<%= asset_path( 'facebook.png' ) %>"width="40"></a>
+      
+          <a href="https://www.youtube.com/user/ACYMaryland" target="_blank"><img src="<%= asset_path( 'youtube.png' ) %>"width="40"></a>
+
+          <a href="https://www.linkedin.com/company/advocates-for-children-and-youth" target="_blank"><img src="<%= asset_path( 'linkedin.png' ) %>"width="40"></a>
+        </div>
+    
+      </div>    
+    </div>
+    <br><br>
+</footer>   -->
